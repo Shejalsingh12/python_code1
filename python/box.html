@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pinterest Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+       
+        .modal {
+            width: 760px;
+            background: #fff;
+            border-radius: 32px;
+            display: flex;
+            margin: 60px auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+       
+        .left {
+            width: 55%;
+            padding: 40px;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .input-box {
+            width: 100%;
+            height: 45px;
+            border-radius: 22px;
+            border: 1px solid #ccc;
+            padding: 0 15px;
+            margin: 8px 0 18px;
+            font-size: 14px;
+        }
+
+      
+        .password-wrapper {
+            position: relative;
+        }
+
+        .eye {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .forgot {
+            color: #0073e6;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            height: 48px;
+            background: #e60023;
+            color: white;
+            border: none;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        .google-btn {
+            width: 100%;
+            height: 48px;
+            border: 1px solid #ccc;
+            border-radius: 24px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .google-btn img {
+            width: 18px;
+        }
+
+        .text-center {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+
+        .text-center a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        footer {
+            font-size: 12px;
+            color: grey;
+            margin-top: 20px;
+        }
+
+        
+        .right {
+            width: 45%;
+            background: #f6f6f6;
+            border-radius: 0 32px 32px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .right img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .right h3 {
+            margin-bottom: 10px;
+        }
+
+        .right p {
+            font-size: 14px;
+            text-align: center;
+            color: grey;
+        }
+
+        .google {
+            width: 400px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            padding: 5px;
+            gap: 95px;
+            justify-content: centre;
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="modal">
+        <div class="close">✕</div>
+
+     
+        <div class="left">
+            <h1>Welcome to Pinterest</h1>
+
+            <label>Email address</label>
+            <input type="email" class="input-box" placeholder="Email">
+
+            <label>Password</label>
+            <div class="password-wrapper">
+                <input type="password" id="password" class="input-box" placeholder="Password">
+                <span class="eye" onclick="togglePassword()"></span>
+            </div>
+
+            <a href="#" class="forgot">Forgotten your password?</a>
+
+            <button class="login-btn">Log in</button>
+
+            
+            <button class="google"><img
+                    src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-google-internet-icon-vector-png-image_12256707.png"
+                    width="20px">Continue with Google</button>
+            <div class="text-center">
+                Facebook login is no longer available<br>
+                <a href="#">Update login method</a><br><br>
+                <a href="#">Not on Pinterest yet? Sign up</a><br><br>
+                Are you a business? <a href="#">Get started here!</a>
+            </div>
+
+            <footer>
+                By continuing, you agree to Pinterest's <a href="#">Terms of Service</a>
+                and acknowledge you've read our <a href="#">Privacy Policy</a>.
+            </footer>
+        </div>
+
+        
+        <div class="right">
+            <img src="scanner.png" alt="QR Code">
+            <h3>Log in instantly</h3>
+            <p>Scan QR code with your phone and confirm login in the Pinterest app</p>
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>

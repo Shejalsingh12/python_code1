@@ -1,0 +1,91 @@
+student table
+roll_no name dept_it
+1   amit   101
+2   riya   102
+3   neha    101
+
+department table
+dept_id    dept_name
+101         cs
+102          it
+
+SELECT*FROM student,department;  #cartesian join
+#inner join
+SELECT columns    
+FROM table1
+INNER JOIN table 2
+ON Condition;  s.dept_id=d.dept_id
+
+
+#equi join
+
+
+SELECT COLUMNS
+FROM STUDENT S, DEPARTMENT D
+WHERE  s.dept_id=d.dept_id
+
+
+
+
+
+#NATURAL JOIN
+SELECT * FROM student NATURAL JOIN department;
+
+
+
+SELECT student.name,student.age FROM student;
+SELECT s.name, s.age FROM student s;
+
+
+
+SELECT Student.name,Department.dept_name
+FROM student JOIN department 
+ON student.dept_id=department.dept_id;
+
+
+
+
+#  group by clause
+  SELECT col_name,
+  aggregate_function(col_name)
+  FROM table_name
+  GROUP BY col_name;
+
+
+  student table
+
+  name   class marks
+  ram   x   80
+  sita   x   70
+  mohan   xI   75
+  rina   xI   85
+
+
+  FIND TOTAL MARKS OF EACH CLASS
+  COUNT STUDENTS IN EACH CLASS
+  FIND AVERAGE MARKS OF EACH CLASS
+  COUNT NUMBER OF STUDENTS IN EACH CLASS WHERE MARKS > 75
+  SELECT class, Count(marks)
+  From student 
+  WHERE marks>75
+  Group by class
+
+
+
+  #having clause
+ SELECT Col_name,
+ aggregate_function(col_name)
+  FROM table_name
+  GROUP BY col_name
+  HAVING condition;
+
+
+  show classes where total marks>75
+  SUM(marks)>75;
+
+
+  SELECT class, COUNT(Marks)
+  FROM student 
+  WHERE marks>70
+  GROUP BY class
+  HAVING COUNT(CLASS)>1

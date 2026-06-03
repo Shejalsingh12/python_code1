@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pinterest Navbar</title>
+  <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 30px;
+  cursor: pointer;
+}
+
+.nav-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-center input {
+  width: 450px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: #f1f1f1;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: 500;
+}
+
+.login {
+  background: #e60023;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup {
+  background: #efefef;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+</style>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+<nav class="navbar">
+  <!-- Left -->
+  <div class="nav-left">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" 
+         alt="Pinterest" class="logo">
+    <a href="#" class="nav-link">Explore</a>
+  </div>
+
+  <!-- Center -->
+  <div class="nav-center">
+    <input type="text" placeholder="Search for easy dinners, fashion, etc.">
+  </div>
+
+  <!-- Right -->
+  <div class="nav-right">
+    <a href="#">About</a>
+    <a href="#">Businesses</a>
+    <a href="#">Create</a>
+    <a href="#">News</a>
+    <button class="login">Log in</button>
+    <button class="signup">Sign up</button>
+  </div>
+</nav>
+
+</body>
+</html>

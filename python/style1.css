@@ -1,0 +1,148 @@
+p{
+    text-align: right;
+}
+#main{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+#about-heading{
+    font-weight: 200;
+    text-align: center;
+    font-weight: 500;
+    margin: 0px;
+}
+#post{
+    font-size: medium;  
+    font-style: italic;
+    position: absolute;
+    left: 30px;
+    top: 35%;
+}
+#name{
+    font-weight: 600;
+    text-decoration: underline;
+    color: lightyellow;
+    position: absolute;
+    left: 30px;
+    top: 31%;
+}
+#aboutme{
+    font-style:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    text-decoration: aqua;
+    display: inline;
+    position: absolute;
+    top:40% ;
+    left: 11%;
+}
+#photo{
+    background-image: url("sakhsii27.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+    position: relative;
+    left: 1100px;
+    display: inline-block;
+}
+#navbar{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+#about{
+    background-color: rgb(84, 79, 79);
+    color: white;
+    height: 400px;
+}
+header{
+    background-color: rgb(194, 133, 133);
+    height: 130px;
+    
+}
+#Educational-Qualification{
+    margin-top:1px;
+    background-color:rgb(91, 81, 81);
+    color: white;    
+    height: 280px;
+}
+#one{
+    display: inline-block;
+    margin: 0px;
+}
+#two{
+    display: inline-block;
+    margin: 0px;
+}
+#Experience{
+    margin-top: 1px;
+    height: 100px;
+    background-color:rgb(93, 86, 86);
+    color:white;
+}
+#Projects{
+    background-color: rgb(95,88,88);
+    margin-top: 1.5px;
+    height: 180px;
+    color: white;
+}
+#three{
+    margin: 1.5px;
+}
+#Skills{
+    background-color: rgb(95,88,88);
+    height: 270px;   
+    color: white; 
+} 
+#container{
+    height: 800px;
+    width: 700px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+#st{
+    height: 80px;
+    width: 80px;
+    background-image: url("html.jpg");
+    background-size: cover;
+}
+#nd{
+    height: 80px;
+    width: 80px;
+    background-image: url("python.jpg");
+    background-size: cover;
+}
+#rd{
+    height: 80px;
+    width: 80px;
+    background-image: url("numpy.jpg");
+    background-size: cover;
+}
+#th{
+    height: 80px;
+    width: 80px;
+    background-image: url(tkinter.jpg);
+    background-size: cover;
+}
+#fth{
+    height: 80px;
+    width: 80px;
+    background-image: url(css.jpg);
+    background-size: cover;
+}
+footer{
+    background-color: rgb(194, 133, 133);    
+}
+#Contact{
+    margin: 2px;
+    height: 60px;
+}
+#greet{
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-weight: 40px;
+}

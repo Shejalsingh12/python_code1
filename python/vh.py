@@ -1,0 +1,13 @@
+from tkinter import*
+win=Tk()
+win.title("set")
+# win.iconbitmap(r"burger.ico")
+win.attributes("-alpha",1)
+win.config(bg="red")
+# win.minsize(100,100)
+# win.maxsize(600,500)
+# win.resizable(False,False)
+p=PhotoImage(file="logo.png")
+l=Label(win,image=p,bg="green",text="hihg", compound="bottom")
+l.place(x=100,y=100)
+win.mainloop()

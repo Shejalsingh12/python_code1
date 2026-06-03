@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest Header</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header Styling */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 40px;
+      border-bottom: 1px solid #ddd;
+      background: white;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #E60023;
+      cursor: pointer;
+    }
+
+    /* Nav links */
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #E60023;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .login {
+      background: #E60023;
+      color: white;
+    }
+
+    .signup {
+      background: #efefef;
+      color: black;
+    }
+
+    .login:hover {
+      background: #c0001c;
+    }
+
+    .signup:hover {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Logo -->
+    <div class="logo">Pinterest</div>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Businesses</a></li>
+        <li><a href="#">Create</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </nav>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="btn login">Log in</button>
+      <button class="btn signup">Sign up</button>
+    </div>
+  </header>
+
+</body>
+</html>

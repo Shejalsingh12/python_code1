@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example</title>
+</head>
+<body>
+  <h1 id="heading">Hello World</h1>
+  <p class="para">This is a paragraph.</p>
+  <button onclick="changeText()">Click Me</button>
+  <button onclick="alert('Button Clicked!')">Click Me</button>
+<button onclick="alert('Button Clicked!')">Click Me</button> <br><br>
+
+<button ondblclick="alert('Button Double Clicked!')">Double Click Me</button> <br><br>
+
+<div onmouseover="this.style.background='yellow'" 
+     onmouseout="this.style.background='lightgray'" 
+     style="width:150px; height:50px; border:1px solid black;">
+     Hover Over Me
+</div> <br><br>
+
+<div onmousemove="console.log('Mouse is moving inside the box')" 
+     style="width:200px; height:100px; border:1px solid red;">
+     Move Mouse Here
+</div>
+<input type="text" 
+       onkeydown="console.log('Key Down:', event.key)" 
+       onkeyup="console.log('Key Up:', event.key)" 
+       onkeypress="console.log('Key Press:', event.key)" 
+       placeholder="Type here...">
+
+
+  <script>
+    function changeText() {
+      // Access element using id
+      document.getElementById("heading").textContent = "DOM Updated!";
+
+      // Access element using class
+      document.querySelector(".para").style.color = "red";
+    }
+    let newEl = document.createElement("p");
+newEl.textContent = "New Paragraph!";
+document.body.appendChild(newEl);
+
+
+let el = document.getElementById("heading");
+el.remove();
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdownbtn{
+            cursor: pointer;
+        }
+        .dropdown-option{
+            display: none;
+            position: absolute;
+            
+        }
+        .dropdown-option a{
+            color: black;
+            display: block;
+        }
+        .dropdown-option a:hover{
+            background-color: aqua;
+        }
+        .dropdown:hover .dropdown-option{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropdownbtn">option</button>
+        <div class="dropdown-option">
+            <a href="">option</a>
+             <a href="">option</a>
+              <a href="">option</a>
+        </div>
+    </div>
+</body>
+</html>

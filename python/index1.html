@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            transition: all 0.4s ease;
+        }
+        #box.tog{
+            background-color: antiquewhite;
+           
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        box
+    </div>
+    <button id="btn">click</button>
+    <script>
+        let a=document.getElementById("box");
+        let b=document.getElementById("btn");
+        b.addEventListener("click",()=>{
+            a.classList.toggle("tog");
+        });
+    </script>
+</body>
+</html>
